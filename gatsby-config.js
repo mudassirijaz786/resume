@@ -5,6 +5,7 @@ module.exports = {
   siteMetadata: {
     title: config.siteTitle,
   },
+
   plugins: [
     'gatsby-plugin-react-helmet',
     {
@@ -22,7 +23,6 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
   ],
-  module.exports = {
-    pathPrefix: "/reponame",
-  }
+
+  pathPrefix: '/resume',
 };
