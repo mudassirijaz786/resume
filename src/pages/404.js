@@ -13,7 +13,7 @@ const IndexPage = () => (
           <h2>
             Page not found
             <br />
-            Not a valid URL
+            Not a valid URL.
           </h2>
         </header>
       </section>
