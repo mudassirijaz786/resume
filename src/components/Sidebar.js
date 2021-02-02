@@ -15,7 +15,6 @@ export class Sidebar extends Component {
         { content: 'Education', href: 'education' },
         { content: 'Skills', href: 'skills' },
         { content: 'Interests', href: 'interests' },
-        { content: 'Awards', href: 'awards' },
       ],
       isCollapsed: true,
     };
@@ -36,21 +35,18 @@ export class Sidebar extends Component {
         id="sideNav"
       >
         <a className="navbar-brand" href="#page-top">
-          <span className="d-block d-lg-none">
-            {config.firstName} {config.lastName}
-          </span>
           <span className="d-none d-lg-block">
             <img
               className="img-fluid img-profile rounded-circle mx-auto mb-2"
               src={avatar}
-              alt=""
+              alt="MUDASSIR"
             />
           </span>
         </a>
         <button
           className={`navbar-toggler navbar-toggler-right ${
             isCollapsed ? 'collapsed' : ''
-            }`}
+          }`}
           type="button"
           data-toggle="collapse"
           aria-controls="navbarSupportedContent"
@@ -60,8 +56,10 @@ export class Sidebar extends Component {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className={`collapse navbar-collapse ${isCollapsed ? '' : 'show'}`}
-          id="navbarSupportedContent">
+        <div
+          className={`collapse navbar-collapse ${isCollapsed ? '' : 'show'}`}
+          id="navbarSupportedContent"
+        >
           <Scrollspy
             items={tabs.map(s => s.href)}
             currentClassName="active"
